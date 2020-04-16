@@ -13,18 +13,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func initThis(){
-	fmt.Printf("Ayo")
-
-}
-
-func main() {
-	var (
-		dgraph = flag.String("d", "127.0.0.1:9080", "Dgraph Alpha address")
-	)
-	flag.Parse()
-
-	initThis()
+func initialize(dgraph *string) (*dgo.Dgraph, *gin.Engine){
 
 	conn, err := grpc.Dial(*dgraph, grpc.WithInsecure())
 	if err != nil {
@@ -42,6 +31,19 @@ func main() {
 		c.JSON(200, graph)
 	})
 	router.Run(":3000")
+	return gdb, router
+
+}
+
+func main() {
+	var (
+		dgraph = flag.String("d", "127.0.0.1:9080", "Dgraph Alpha address")
+	)
+	flag.Parse()
+
+	initialize(dgraph)
+
+
 }
 
 func getGraph(dgb *dgo.Dgraph) map[string]interface{}{
