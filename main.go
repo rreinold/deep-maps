@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"strconv"
 	"encoding/json"    
 	"github.com/dgraph-io/dgo/v2"
 	"github.com/dgraph-io/dgo/v2/protos/api"
@@ -12,6 +13,17 @@ import (
 	"google.golang.org/grpc"
 	"github.com/gin-gonic/gin"
 )
+
+func main() {
+	var (
+		dgraph = flag.String("d", "127.0.0.1:9080", "Dgraph Alpha address")
+	)
+	flag.Parse()
+
+	initialize(dgraph)
+
+
+}
 
 func initialize(dgraph *string) (*dgo.Dgraph, *gin.Engine){
 
@@ -30,19 +42,22 @@ func initialize(dgraph *string) (*dgo.Dgraph, *gin.Engine){
 		fmt.Printf("%+v",graph)
 		c.JSON(200, graph)
 	})
+	router.GET("/locations", func(c *gin.Context) {
+		latString := c.DefaultQuery("lat", "30.268071")
+		lat, errLat := strconv.ParseFloat(latString, 64)
+		lngString := c.DefaultQuery("lng", "-97.742802")
+		lng, errLng := strconv.ParseFloat(lngString, 64)
+		if errLng != nil || errLat != nil {
+			fmt.Printf("Invalid coordinates provided")
+			c.JSON(400, "Invalid coordinates provided")
+		}
+		fmt.Printf("Called /location, using lat %v lng %v",lat, lng)
+		locations := searchLocations(gdb, lat, lng)
+		fmt.Printf("%+v",locations)
+		c.JSON(200, locations)
+	})
 	router.Run(":3000")
 	return gdb, router
-
-}
-
-func main() {
-	var (
-		dgraph = flag.String("d", "127.0.0.1:9080", "Dgraph Alpha address")
-	)
-	flag.Parse()
-
-	initialize(dgraph)
-
 
 }
 
@@ -63,6 +78,28 @@ func getGraph(dgb *dgo.Dgraph) map[string]interface{}{
 	    }
 	  }
 	}`)
+	
+	if err != nil {
+		log.Fatal(err)
+	}
+	var response map[string]interface{}
+	err = json.Unmarshal(resp.Json, &response)
+	if err != nil {
+		fmt.Println("error:", err)
+	}
+	fmt.Printf("%+v", response)
+	return response
+}
+
+func searchLocations(dgb *dgo.Dgraph, lat float64 , lng float64) map[string]interface{}{
+    query := fmt.Sprintf(`{
+	  locations(func: near(location, [%v,%v], 4000) ) {
+	    name
+	    location
+	  }
+	}`,lng, lat)
+	fmt.Println(query)
+	resp, err := dgb.NewTxn().Query(context.Background(), query)
 	
 	if err != nil {
 		log.Fatal(err)
