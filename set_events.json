@@ -1,0 +1,140 @@
+{
+	"set": [
+		{
+	    	"uid": "_:topic_weird",
+	    	"name": "Topic: Weird",
+	    	"storyline":[
+	    		{
+	    			"uid":"_:storyline1_origin_keep_austin_weird"
+	    		}
+	    	]
+	    },
+		{
+			"uid":"_:storyline1_origin_keep_austin_weird",
+			"name":"storyline origin",
+			"event":[
+				{
+					"uid":"_:event1_creation"
+				},
+				{
+					"uid":"_:event2_bumper"
+				},
+				{
+					"uid":"_:event3_chicken_shit_bingo"
+				},
+				{
+					"uid":"_:event4_cathedral"
+				}
+	    	],
+	    	"topic":[
+	    		{
+	    			"uid":"_:topic_weird"
+	    		}
+	    	]
+		},
+		{
+			"uid":"_:event1_creation",
+			"name":"Creation of 'Keep Austin Weird'",
+			"desc":"Red Wassenich 'phoned into KOOP Radio's The Lounge Show to donate money. When the radio host asked why he was contributing, Wassenich replied, 'I don't know. It helps keep Austin weird.'" ,
+			"date": "2000-01-01",
+			"topic_name":{
+				"uid":"_:topic_weird"
+			},
+			"place":[
+				{
+					"uid":"_:place_koop"
+				},
+				{
+					"uid":"_:place_lib"
+				}
+			]
+		},
+		{
+			"uid":"_:event2_bumper",
+			"name":"Book People and Waterloo Records make 'Keep Austin Weird' bumper stickers",
+			"desc":"Steve Bercu, founder and co-owner of BookPeople and current board president for the Austin Independent Business Alliance, recalls that in 2002, as Keep it Weird was becoming an ethos for many Austinites, BookPeople and Waterloo Records created bumper stickers reading 'Keep Austin Weird' along with the tagline 'Support Local Businesses.'",
+			"date":"2002-01-01",
+			"topic_name":{
+				"uid":"_:topic_weird"
+			},
+			"place":[
+				{
+					"uid":"_:place_book_ppl"
+				}
+			]
+		},
+		{
+			"uid":"_:event3_chicken_shit_bingo",
+			"name":"Chicken Shit Bingo is born",
+			"desc":"Chicken Shit Bingo started when a local musician approached the bar’s previous owners, Don and Ginny, with an idea he brought back from California. There, he had seen cow shit bingo, but he suggested using chickens instead. Ginny’s famous response was: “It’s never gonna last.” Today, the 25-year tradition would suggest otherwise.",
+			"date":"1994-01-01",
+			"topic_name":{
+				"uid":"_:topic_weird"
+			},
+			"place":[
+				{
+					"uid":"_:place_little_longhorn"
+				}
+			]
+		},
+		{
+			"uid":"_:event4_cathedral",
+			"name":"Cathedral of Junk construction begins",
+			"desc":"Some 60 tons of discarded items, many of them bicycles, make up the skeleton and decoration of the structure. The construction of the Cathedral started in 1989, when Hannemann was in his 20s. For a few years he collected junk for his project, but it was soon unnecessary as people began to supply him with their unwanted goods.",
+			"date":"1989-01-01",
+			"topic_name":{
+				"uid":"_:topic_weird"
+			},
+			"place":[
+				{
+					"uid":"_:place_cathedral"
+				}
+			]
+		},
+		{
+			"uid":"_:place_little_longhorn",
+			"name":"The Little Longhorn Saloon",
+			"address":"5434 Burnet Road, Austin, Texas 78756, United States",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.739815, 30.329163]
+			}
+		},
+		{
+			"uid":"_:place_koop",
+			"name":"KOOP Radio Studio",
+			"address":"3823 Airport Blvd, Austin, TX 78722",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.7065383, 30.288534]
+			}
+		},
+		{
+			"uid":"_:place_lib",
+			"name":"Rio Grande Campus Library",
+			"address":"1218 West Ave, Austin, TX 78701",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.7485447, 30.2773473]
+			}
+		},
+		{
+			"uid":"_:place_book_ppl",
+			"name":"Book People",
+			"address":"603 N Lamar Blvd, Austin, TX 78703",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.7529142, 30.271779]
+			}
+		},
+		{
+			"uid":"_:place_cathedral",
+			"name":"Cathedral of Junk",
+			"address":"4422 Lareina Drive, Austin, Texas, 78745",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.77092, 30.21954]
+			}
+		}
+	]
+}
