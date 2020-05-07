@@ -12,6 +12,7 @@
 		{
 			"uid":"_:storyline1_origin_keep_austin_weird",
 			"name":"storyline origin",
+			"image":"https://i.pinimg.com/originals/65/90/db/6590db98cbe18833293c80c1ba6e0676.png",
 			"event":[
 				{
 					"uid":"_:event1_creation"
