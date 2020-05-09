@@ -12,6 +12,7 @@ import (
     
 	"google.golang.org/grpc"
 	"github.com/gin-gonic/gin"
+	"str/config"
 )
 
 func main() {
@@ -26,7 +27,8 @@ func main() {
 }
 
 func initialize(dgraph *string) (*dgo.Dgraph, *gin.Engine){
-
+	configuration := config.GetConfig()
+	fmt.Println(configuration)
 	conn, err := grpc.Dial(*dgraph, grpc.WithInsecure())
 	if err != nil {
 		log.Fatal(err)
