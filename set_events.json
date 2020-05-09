@@ -34,6 +34,13 @@
 	    	]
 		},
 		{
+			"uid":"_:storyline2_servant_girl_annihilator",
+			"name":"The Servant Girl Annihilator",
+			"image_small":"https://en.wikipedia.org/wiki/File:Hell_Broke_Loose.jpg",
+			"event":[],
+	    	"topic":[]
+		}
+		{
 			"uid":"_:event1_creation",
 			"name":"Creation of 'Keep Austin Weird'",
 			"desc":"Red Wassenich 'phoned into KOOP Radio's The Lounge Show to donate money. When the radio host asked why he was contributing, Wassenich replied, 'I don't know. It helps keep Austin weird.'" ,
