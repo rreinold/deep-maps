@@ -10,6 +10,15 @@
 	    	]
 	    },
 		{
+	    	"uid": "_:topic_dark",
+	    	"name": "Topic: Dark Tourism",
+	    	"storyline":[
+	    		{
+	    			"uid":"_:storyline2_servant_girl_annihilator"
+	    		}
+	    	]
+	    },
+		{
 			"uid":"_:storyline1_origin_keep_austin_weird",
 			"name":"storyline origin",
 			"desc":"Keep Austin Weird is an iconic slogan for the city of Austin, learn how it  originated.",
@@ -39,7 +48,35 @@
 			"name":"The Servant Girl Annihilator",
 			"desc":"The Servant Girl Annihilator, also known as the Austin Axe Murderer, was an unidentified American [[serial killer]] who preyed upon the city of Austin, Texas between 1884 and 1885. The sobriquet originated with the writer O. Henry.",
 			"image_small":"https://en.wikipedia.org/wiki/File:Hell_Broke_Loose.jpg",
-			"event":[],
+			"event":[
+				{
+					"uid":"_:event5_attack1"
+				},
+				{
+					"uid":"_:event6_attack2"
+				},
+				{
+					"uid":"_:event7_attack3"
+				},
+				{
+					"uid":"_:event8_term_coined"
+				},
+				{
+					"uid":"_:event9_attack4"
+				},
+				{
+					"uid":"_:event10_attack5"
+				},
+				{
+					"uid":"_:event11_attack6"
+				},
+				{
+					"uid":"_:event12_attack7"
+				},
+				{
+					"uid":"_:event13_attack8"
+				}
+	    	],
 	    	"topic":[]
 		},
 		{
