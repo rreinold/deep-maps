@@ -120,15 +120,27 @@
 		},
 		{
 			"uid":"_:event7_attack3",
-			"name":"Eliza Shelly was murdered was murdered in the night",
-			"desc":"Eliza Shelly was murdered the night of 6 May 1885",
+			"name":"Attack 3, Eliza Shelly",
+			"desc":"Eliza Shelly was murdered in the night",
 			"date":"1885-05-06",
 			"place":[
 				{
-					"uid":"_:place_attack2"
+					"uid":"_:place_attack3"
 				}
 			],
 			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		{
+			"uid":"_:event8_term_coined",
+			"name":"'Servant Girl Annihilator' term coined by O. Henry",
+			"desc":"William Sydney Porter, better known as the short story writer [[O. Henry]], was living in Austin at the time of the murders. Porter coined the term \"Servant Girl Annihilators\" in a letter addressed to his friend Dave Hall and later included in his anthology Rolling Stones: \"Town is fearfully dull,\" wrote Porter, \"except for the frequent raids of the Servant Girl Annihilators, who make things lively in the dull hours of the night....\"",
+			"date":"1885-05-10",
+			"place":[
+				{
+					"uid":"_:place_o_henry_residence"
+				}
+			],
+			"source":"http://www.austinlibrary.com/ahc/ohm07.htm"
 		},
 		{
 			"uid":"_:place_little_longhorn",
@@ -179,6 +191,26 @@
 			"uid":"_:place_attack2",
 			"name":"Location of attack on Clara Strand, Christine Martenson",
 			"address":"TODO"
+		},
+		{
+			"uid":"_:place_attack3",
+			"name":"Murder of Eliza Shelly",
+			"address":"",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.741227, 30.264685]
+			}
+		},
+		{
+			"uid":"_:place_o_henry_residence",
+			"name":"Residence of O Henry, at Home of Joseph Harrell",
+			"address":"1008 Lavaca Street",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.7438582777111, 30.272592870023
+]
+			}
 		}
+		
 	]
 }
