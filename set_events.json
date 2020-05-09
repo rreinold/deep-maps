@@ -350,7 +350,7 @@
 			"uid":"_:place_attack8",
 			"name":"Murder of Eula Phillips",
 			"address":"",
-			"location": {
+			"loca": {
 			    "type": "Point",
 			    "coordinates": [-97.744722, 30.270961]
 			}
