@@ -143,6 +143,32 @@
 			"source":"http://www.austinlibrary.com/ahc/ohm07.htm"
 		},
 		{
+			"uid":"_:event9_attack4",
+			"name":"Attack 4, Irene Cross",
+			"desc":"Irene Cross murdered by a man with a knife on the night",
+			"date":"1885-05-22",
+			"place":[
+				{
+					"uid":"_:place_attack4"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		{
+			"uid":"_:event10_attack5",
+			"name":"Attack 5, Mary Ramey",
+			"desc":"Mary Ramey, 11, was murdered the night of 30 August 1885. Her mother, Rebecca Ramey was seriously wounded.",
+			"date":"1885-08-30",
+			"place":[
+				{
+					"uid":"_:place_attack5"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		
+		
+		{
 			"uid":"_:place_little_longhorn",
 			"name":"The Little Longhorn Saloon",
 			"address":"5434 Burnet Road, Austin, Texas 78756, United States",
@@ -207,8 +233,25 @@
 			"address":"1008 Lavaca Street",
 			"location": {
 			    "type": "Point",
-			    "coordinates": [-97.7438582777111, 30.272592870023
-]
+			    "coordinates": [-97.7438582777111, 30.272592870023]
+			}
+		},
+		{
+			"uid":"_:place_attack4",
+			"name":"Murder of Irene Cross",
+			"address":"",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.73596, 30.278136]
+			}
+		},
+		{
+			"uid":"_:place_attack5",
+			"name":"Murder of Mary Ramey",
+			"address":"",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.740807, 30.265689]
 			}
 		}
 		
