@@ -166,6 +166,43 @@
 			],
 			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
 		},
+		{
+			"uid":"_:event11_attack6",
+			"name":"Attack 6, Gracie Vance",
+			"desc":"Gracie Vance was murdered on the night",
+			"date":"1885-09-28",
+			"place":[
+				{
+					"uid":"_:place_attack6"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		{
+			"uid":"_:event12_attack7",
+			"name":"Attack 7, Susan Hancock",
+			"desc":"Susan Hancock was murdered the night",
+			"date":"1885-12-24",
+			"place":[
+				{
+					"uid":"_:place_attack7"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		{
+			"uid":"_:event13_attack8",
+			"name":"Attack 8, Eula Phillips",
+			"desc":"Eula Phillips was murdered the night. Her husband, James Phillips, was seriously wounded.",
+			"date":"1885-12-24",
+			"place":[
+				{
+					"uid":"_:place_attack8"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		
 		
 		
 		{
@@ -252,6 +289,33 @@
 			"location": {
 			    "type": "Point",
 			    "coordinates": [-97.740807, 30.265689]
+			}
+		},
+		{
+			"uid":"_:place_attack6",
+			"name":"Murder of Gracie Vance",
+			"address":"",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.7421, 30.288446]
+			}
+		},
+		{
+			"uid":"_:place_attack7",
+			"name":"Murder of Susan Hancock",
+			"address":"",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.742955, 30.262748]
+			}
+		},
+		{
+			"uid":"_:place_attack8",
+			"name":"Murder of Eula Phillips",
+			"address":"",
+			"location": {
+			    "type": "Point",
+			    "coordinates": [-97.744722, 30.270961]
 			}
 		}
 		
