@@ -95,8 +95,8 @@
 			"source":"https://www.atlasobscura.com/places/cathedral-junk"
 		},
 		{
-			"uid":"_:event5_murder1",
-			"name":"Murder 1, Mollie Smith",
+			"uid":"_:event5_attack1",
+			"name":"Attack 1, Mollie Smith",
 			"desc":"Mollie Smith, 25, was murdered the night of 30 December 1884. Walter Spencer was seriously wounded.",
 			"date":"1884-12-30",
 			"place":[
@@ -104,7 +104,31 @@
 					"uid":"_:place_attack1"
 				}
 			],
-			"source":"https://www.atlasobscura.com/places/cathedral-junk"
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		{
+			"uid":"_:event6_attack2",
+			"name":"Attack 2, Clara Strand and Christine Martenson",
+			"desc":"Clara Strand and Christine Martenson, two Swedish servant girls, were seriously wounded",
+			"date":"1885-03-19",
+			"place":[
+				{
+					"uid":"_:place_attack2"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
+		},
+		{
+			"uid":"_:event7_attack3",
+			"name":"Eliza Shelly was murdered was murdered in the night",
+			"desc":"Eliza Shelly was murdered the night of 6 May 1885",
+			"date":"1885-05-06",
+			"place":[
+				{
+					"uid":"_:place_attack2"
+				}
+			],
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
 		},
 		{
 			"uid":"_:place_little_longhorn",
@@ -150,6 +174,11 @@
 			    "type": "Point",
 			    "coordinates": [-97.752963, 30.270954]
 			}
+		},
+		{
+			"uid":"_:place_attack2",
+			"name":"Location of attack on Clara Strand, Christine Martenson",
+			"address":"TODO"
 		}
 	]
 }
