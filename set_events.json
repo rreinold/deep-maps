@@ -46,7 +46,7 @@
 		{
 			"uid":"_:storyline2_servant_girl_annihilator",
 			"name":"The Servant Girl Annihilator",
-			"desc":"The Servant Girl Annihilator, also known as the Austin Axe Murderer, was an unidentified American [[serial killer]] who preyed upon the city of Austin, Texas between 1884 and 1885. The sobriquet originated with the writer O. Henry.",
+			"desc":"The Servant Girl Annihilator, also known as the Austin Axe Murderer, was an unidentified American [[serial killer]] who preyed upon the city of Austin, Texas between 1884 and 1885. The sobriquet originated with the writer O. Henry, and the murders predated Jack the Ripper by 3 years, and some theories believe they were carried out by the same person.",
 			"image_small":"https://en.wikipedia.org/wiki/File:Hell_Broke_Loose.jpg",
 			"event":[
 				{
@@ -177,7 +177,7 @@
 					"uid":"_:place_o_henry_residence"
 				}
 			],
-			"source":"http://www.austinlibrary.com/ahc/ohm07.htm"
+			"source":"https://en.wikipedia.org/wiki/Servant_Girl_Annihilator"
 		},
 		{
 			"uid":"_:event9_attack4",
@@ -246,7 +246,7 @@
 			"uid":"_:place_little_longhorn",
 			"name":"The Little Longhorn Saloon",
 			"address":"5434 Burnet Road, Austin, Texas 78756, United States",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.739815, 30.329163]
 			}
@@ -255,7 +255,7 @@
 			"uid":"_:place_koop",
 			"name":"KOOP Radio Studio",
 			"address":"3823 Airport Blvd, Austin, TX 78722",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.7065383, 30.288534]
 			}
@@ -264,7 +264,7 @@
 			"uid":"_:place_lib",
 			"name":"Rio Grande Campus Library",
 			"address":"1218 West Ave, Austin, TX 78701",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.7485447, 30.2773473]
 			}
@@ -273,7 +273,7 @@
 			"uid":"_:place_book_ppl",
 			"name":"Book People",
 			"address":"603 N Lamar Blvd, Austin, TX 78703",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.7529142, 30.271779]
 			}
@@ -282,7 +282,7 @@
 			"uid":"_:place_attack1",
 			"name":"Murder of Mollie Smith",
 			"address":"",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.752963, 30.270954]
 			}
@@ -296,7 +296,7 @@
 			"uid":"_:place_attack3",
 			"name":"Murder of Eliza Shelly",
 			"address":"",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.741227, 30.264685]
 			}
@@ -305,16 +305,17 @@
 			"uid":"_:place_o_henry_residence",
 			"name":"Residence of O Henry, at Home of Joseph Harrell",
 			"address":"1008 Lavaca Street",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.7438582777111, 30.272592870023]
-			}
+			},
+			"source":"http://www.austinlibrary.com/ahc/ohm07.htm"
 		},
 		{
 			"uid":"_:place_attack4",
 			"name":"Murder of Irene Cross",
 			"address":"",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.73596, 30.278136]
 			}
@@ -323,7 +324,7 @@
 			"uid":"_:place_attack5",
 			"name":"Murder of Mary Ramey",
 			"address":"",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.740807, 30.265689]
 			}
@@ -332,7 +333,7 @@
 			"uid":"_:place_attack6",
 			"name":"Murder of Gracie Vance",
 			"address":"",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.7421, 30.288446]
 			}
@@ -341,7 +342,7 @@
 			"uid":"_:place_attack7",
 			"name":"Murder of Susan Hancock",
 			"address":"",
-			"location": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.742955, 30.262748]
 			}
@@ -350,7 +351,7 @@
 			"uid":"_:place_attack8",
 			"name":"Murder of Eula Phillips",
 			"address":"",
-			"loca": {
+			"loc": {
 			    "type": "Point",
 			    "coordinates": [-97.744722, 30.270961]
 			}
